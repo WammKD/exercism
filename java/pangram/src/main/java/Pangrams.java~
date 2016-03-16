@@ -1,0 +1,10 @@
+import javaslang.collection.CharSeq;
+
+public class Pangrams {
+    final private static CharSeq alphabetic = CharSeq.of("abcdefghijklmnopqrstuvwxyz");
+
+    public static boolean isPangram(String phrase) {
+	return CharSeq.of(phrase.toLowerCase()).filter((Character c) ->
+						           c >= 97 && c <= 122).containsAll(alphabetic);
+    }
+}

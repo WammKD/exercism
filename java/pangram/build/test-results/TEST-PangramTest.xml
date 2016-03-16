@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PangramTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-03-15T00:32:31" hostname="Watson" time="0.141">
+  <properties/>
+  <testcase name="testLowercasePangram" classname="PangramTest" time="0.14"/>
+  <testcase name="nonAsciiCharacters" classname="PangramTest" time="0.0"/>
+  <testcase name="missingCharacterX" classname="PangramTest" time="0.0"/>
+  <testcase name="mixedCaseAndPunctuation" classname="PangramTest" time="0.0"/>
+  <testcase name="emptySentence" classname="PangramTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

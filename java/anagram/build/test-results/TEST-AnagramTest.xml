@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AnagramTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-03-14T21:20:01" hostname="Watson" time="0.236">
+  <properties/>
+  <testcase name="testIdenticalWordIsNotAnagram" classname="AnagramTest" time="0.228"/>
+  <testcase name="testEliminateAnagramsWithSameChecksum" classname="AnagramTest" time="0.001"/>
+  <testcase name="testMultipleAnagrams" classname="AnagramTest" time="0.001"/>
+  <testcase name="testAnagramsAreCaseInsensitive" classname="AnagramTest" time="0.0"/>
+  <testcase name="testDetectAnagrams" classname="AnagramTest" time="0.0"/>
+  <testcase name="testDetectMultipleAnagrams" classname="AnagramTest" time="0.002"/>
+  <testcase name="testDoesNotConfuseDifferentDuplicates" classname="AnagramTest" time="0.0"/>
+  <testcase name="testEliminateAnagramSubsets" classname="AnagramTest" time="0.0"/>
+  <testcase name="testNoMatches" classname="AnagramTest" time="0.0"/>
+  <testcase name="testSimpleAnagram" classname="AnagramTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+(define-module (dna)
+  #:export (to-rna))
+
+(define (to-rna strand)
+  (list->string (map (lambda (letter)
+                       (cond
+                        [(char=? #\G letter) #\C]
+                        [(char=? #\C letter) #\G]
+                        [(char=? #\T letter) #\A]
+                        [(char=? #\A letter) #\U])) (string->list strand))))

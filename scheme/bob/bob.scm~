@@ -1,0 +1,24 @@
+(define-module (bob)
+  #:export (response-for)
+  #:autoload (ice-9 common-list) (every some))
+
+(define -- 1-)  ;; 'Tis habit.
+
+(define (response-for response)
+  (define (last-char s)
+    (substring s (-- (string-length s))))
+  (define (all-caps s)
+    (if (some (lambda (c)
+                (string-contains-ci s (list->string (list c)))) '(#\A #\B #\C #\D #\E #\F #\G #\H #\I #\J #\K #\L #\M
+                                                                  #\N #\O #\P #\Q #\R #\S #\T #\U #\V #\W #\X #\Y #\Z))
+        (every (lambda (c)
+                 (char=? c (char-upcase c))) (string->list s))
+      #f))
+
+  (cond
+   [(string=? ""    (string-trim response)) "Fine. Be that way!"]
+   [(or
+      (string=? "!" (last-char   response))
+      (all-caps                  response))   "Whoa, chill out!"]
+   [(string=? "?"   (last-char   response))              "Sure."]
+   [else                                             "Whatever."]))
